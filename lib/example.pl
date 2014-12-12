@@ -1,11 +1,14 @@
 #!/usr/env perl
-use Vultr;
+use WebService::Vultr;
 
 use strict; use warnings;
 
-my $key = "oJyl/h6Y7pUh.dGreRMkce";
+# All values are examples only - replace with your own!
 
-my $vultr = Vultr->new($key);
+# Key is found in settings in your Vultr account
+my $key = "l/h6Y7pUh.dGreRMk";
+
+my $vultr = WebService::Vultr->new($key);
 
 #print "Account info: " . $vultr->account_info . "\n\n";
 
@@ -29,9 +32,15 @@ my $vultr = Vultr->new($key);
 
 #print $vultr->server_create($param_ref);
 
+#my $param_ref = {
+#	SUBID => '1569220',
+#	reboot => 'yes' 
+#};
+
+#print $vultr->server_create_ipv4($param_ref);
+
 my $param_ref = {
-	SUBID => '1569220',
-	reboot => 'yes' 
+	SUBID => '1569220'
 };
 
-print $vultr->server_create_ipv4($param_ref);
+print $vultr->server_destroy($param_ref);
