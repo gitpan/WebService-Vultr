@@ -19,8 +19,14 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "WebService::Vultr",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.002",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "LWP::Protocol::https" => 0,
+    "LWP::UserAgent" => 0,
+    "strict" => 0,
+    "warnings" => 0
+  },
+  "VERSION" => "0.1",
   "test" => {
     "TESTS" => ""
   }
@@ -28,7 +34,12 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
-  "ExtUtils::MakeMaker" => 0
+  "Carp" => 0,
+  "ExtUtils::MakeMaker" => 0,
+  "LWP::Protocol::https" => 0,
+  "LWP::UserAgent" => 0,
+  "strict" => 0,
+  "warnings" => 0
 );
 
 

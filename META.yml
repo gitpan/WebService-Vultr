@@ -12,4 +12,10 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
 name: WebService-Vultr
-version: '0.002'
+requires:
+  Carp: '0'
+  LWP::Protocol::https: '0'
+  LWP::UserAgent: '0'
+  strict: '0'
+  warnings: '0'
+version: '0.1'

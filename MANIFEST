@@ -6,5 +6,6 @@ Makefile.PL
 README
 README.md
 dist.ini
+examples/example.pl
 lib/WebService/Vultr.pm
 lib/example.pl
